@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+}
+
+.card-container{
+    width: 90%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    padding: 2rem;
+    box-shadow: 0 0 .4rem .4rem rgba(0, 0, 0, 0.2);
+    transition: .4s ease-in;
+}
+
+.card:hover{
+    background: rgb(196, 196, 196);
+    transform: scale(1.2);
+
+}
+.card-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.card-heading{
+    color: tomato;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+.card-title{
+    color: rgb(195, 114, 114);
+    display: flex;
+    justify-content: center;
+    margin-bottom: .3rem;
+}
+.card-body{
+    color: rgb(226, 226, 226);
+    display: flex;
+    text-align: justify;
+}
+@media screen and (min-width: 860px) and (max-width:1300px) {
+    .card-container{
+        width: 90%;
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:859px) {
+    .card-container{
+        width: 90%;
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (min-width: 1600px) {
+    .card-container{
+        width: 90%;
+        margin: 4rem auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+    
+}
+
